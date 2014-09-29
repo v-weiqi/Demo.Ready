@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1dff86f5-5c7a-45cb-92ef-35282f95ff09" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:2020/FMS.xamlx" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="FMS.xsd" MetadataType="Schema" ID="f15eccae-a719-4de7-bfe6-16a925097e7a" SourceId="1" SourceUrl="http://localhost:2020/FMS.xamlx?xsd=xsd0" />
+    <MetadataFile FileName="FMS.disco" MetadataType="Disco" ID="f27cd9bb-cd61-4a76-848f-8f8c22bab289" SourceId="1" SourceUrl="http://localhost:2020/FMS.xamlx?disco" />
+    <MetadataFile FileName="FMS1.xsd" MetadataType="Schema" ID="83d525fe-c17d-4ae5-b8bd-3a9f6cb8a824" SourceId="1" SourceUrl="http://localhost:2020/FMS.xamlx?xsd=xsd2" />
+    <MetadataFile FileName="FMS2.xsd" MetadataType="Schema" ID="fb529856-c02f-4d45-9217-d8397b5b4564" SourceId="1" SourceUrl="http://localhost:2020/FMS.xamlx?xsd=xsd3" />
+    <MetadataFile FileName="FMSS.wsdl" MetadataType="Wsdl" ID="afa3fd09-cad8-44cc-94ed-f0793276f5d6" SourceId="1" SourceUrl="http://localhost:2020/FMS.xamlx?wsdl" />
+    <MetadataFile FileName="FMS.wsdl" MetadataType="Wsdl" ID="be814e9e-7cd5-45cc-a729-0fa1a0fc5065" SourceId="1" SourceUrl="http://localhost:2020/FMS.xamlx?wsdl=wsdl0" />
+    <MetadataFile FileName="FMS3.xsd" MetadataType="Schema" ID="8a710f62-2798-4c27-83eb-9d4c34ae20e6" SourceId="1" SourceUrl="http://localhost:2020/FMS.xamlx?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

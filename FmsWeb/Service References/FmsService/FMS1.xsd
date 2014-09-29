@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:2020/FMS.xamlx?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="Submission">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AppId" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="AzureInstallerUrls" nillable="true" type="q1:ArrayOfstring" />
+      <xs:element minOccurs="0" name="BackupLocation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DiscoveryFeedRequiresUpdate" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Failed" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Faults" nillable="true" type="tns:ArrayOfFault" />
+      <xs:element minOccurs="0" name="Feed" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsAzureReady" type="xs:boolean" />
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="LiveInstallerUrls" nillable="true" type="q2:ArrayOfstring" />
+      <xs:element minOccurs="0" name="Statuses" nillable="true" type="tns:ArrayOfSubmissionStatus" />
+      <xs:element minOccurs="0" name="SubmissionType" type="tns:SubmissionType" />
+      <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="TC2InstallerUrls" nillable="true" type="q3:ArrayOfstring" />
+      <xs:element minOccurs="0" name="TransactionId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Version" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Submission" nillable="true" type="tns:Submission" />
+  <xs:complexType name="ArrayOfFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Fault" nillable="true" type="tns:Fault" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFault" nillable="true" type="tns:ArrayOfFault" />
+  <xs:complexType name="Fault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActivityName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FaultDetails" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TimeCreated" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="WorkflowInstanceId" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Fault" nillable="true" type="tns:Fault" />
+  <xs:complexType name="ArrayOfSubmissionStatus">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SubmissionStatus" nillable="true" type="tns:SubmissionStatus" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSubmissionStatus" nillable="true" type="tns:ArrayOfSubmissionStatus" />
+  <xs:complexType name="SubmissionStatus">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Log" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Pass" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SubmissionStatus" nillable="true" type="tns:SubmissionStatus" />
+  <xs:simpleType name="SubmissionType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Azure" />
+      <xs:enumeration value="Katal" />
+      <xs:enumeration value="WebMatrix" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="SubmissionType" nillable="true" type="tns:SubmissionType" />
+  <xs:complexType name="UserRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CloseTransaction" type="xs:boolean" />
+      <xs:element minOccurs="0" name="DiscoveryFeedRequiresUpdate" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Feed" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TransactionId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="User" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UserRequest" nillable="true" type="tns:UserRequest" />
+  <xs:complexType name="FmsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Submission" nillable="true" type="tns:Submission" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FmsResponse" nillable="true" type="tns:FmsResponse" />
+</xs:schema>

@@ -1,0 +1,15 @@
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-branch\FmsWeb\bin\FmsWeb.dll
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-branch\FmsWeb\bin\FmsWeb.pdb
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-branch\FmsWeb\obj\Debug\FmsWeb.csprojResolveAssemblyReference.cache
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-branch\FmsWeb\obj\Debug\FmsWeb.dll
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-branch\FmsWeb\obj\Debug\FmsWeb.pdb
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-DEV\FmsWeb\bin\FmsWeb.dll
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-DEV\FmsWeb\bin\FmsWeb.pdb
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-DEV\FmsWeb\obj\Debug\FmsWeb.dll
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-DEV\FmsWeb\obj\Debug\FmsWeb.pdb
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-DEV\FmsWeb\obj\Debug\FmsWeb.csprojResolveAssemblyReference.cache
+C:\FMS\FmsWeb\bin\FmsWeb.dll
+C:\FMS\FmsWeb\bin\FmsWeb.pdb
+C:\FMS\FmsWeb\obj\Debug\FmsWeb.csprojResolveAssemblyReference.cache
+C:\FMS\FmsWeb\obj\Debug\FmsWeb.dll
+C:\FMS\FmsWeb\obj\Debug\FmsWeb.pdb

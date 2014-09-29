@@ -1,0 +1,18 @@
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-branch\XmlGenCore\bin\Debug\XmlGenCore.dll.config
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-branch\XmlGenCore\bin\Debug\XmlGenCore.dll
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-branch\XmlGenCore\bin\Debug\XmlGenCore.pdb
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-branch\XmlGenCore\obj\Debug\XmlGenCore.dll
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-branch\XmlGenCore\obj\Debug\XmlGenCore.pdb
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-branch\XmlGenCore\obj\Debug\XmlGenCore.csprojResolveAssemblyReference.cache
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-DEV\XmlGenCore\bin\Debug\XmlGenCore.dll.config
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-DEV\XmlGenCore\bin\Debug\XmlGenCore.dll
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-DEV\XmlGenCore\bin\Debug\XmlGenCore.pdb
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-DEV\XmlGenCore\obj\Debug\XmlGenCore.csprojResolveAssemblyReference.cache
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-DEV\XmlGenCore\obj\Debug\XmlGenCore.dll
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-DEV\XmlGenCore\obj\Debug\XmlGenCore.pdb
+C:\FMS\XmlGenCore\bin\Debug\XmlGenCore.dll.config
+C:\FMS\XmlGenCore\bin\Debug\XmlGenCore.dll
+C:\FMS\XmlGenCore\bin\Debug\XmlGenCore.pdb
+C:\FMS\XmlGenCore\obj\Debug\XmlGenCore.csprojResolveAssemblyReference.cache
+C:\FMS\XmlGenCore\obj\Debug\XmlGenCore.dll
+C:\FMS\XmlGenCore\obj\Debug\XmlGenCore.pdb

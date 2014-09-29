@@ -1,0 +1,13 @@
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-branch\Model\bin\Debug\Model.dll
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-branch\Model\bin\Debug\Model.pdb
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-branch\Model\obj\Debug\Model.dll
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-branch\Model\obj\Debug\Model.pdb
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-branch\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-DEV\Model\bin\Debug\Model.dll
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-DEV\Model\bin\Debug\Model.pdb
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-DEV\Model\obj\Debug\Model.dll
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-DEV\Model\obj\Debug\Model.pdb
+C:\FMS\Model\bin\Debug\Model.dll
+C:\FMS\Model\bin\Debug\Model.pdb
+C:\FMS\Model\obj\Debug\Model.dll
+C:\FMS\Model\obj\Debug\Model.pdb

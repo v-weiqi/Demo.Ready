@@ -1,0 +1,157 @@
+﻿@using FmsWeb.Model
+
+<script type="text/javascript">
+    
+    function GoTo(appId, appVersion, transactionId) {
+        var url = "/Vendor/AppDetail/?appId=" + appId + "&version=" + appVersion + "#" + transactionId;
+        window.location = url;
+    }
+
+    function AssignTask(appID, appVersion, workFlowInstanceID) {
+        var assignTo = $("select[name='" + workFlowInstanceID + "']").val();
+        var url = "/Vendor/AssignTask/?appID=" + appID + "&version=" + appVersion + "&workFlowInstanceID=" + workFlowInstanceID + "&assignTo=" + assignTo;
+        window.location = url;
+    }
+</script>
+
+<h3>Apps Requiring Testing on TC2</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>App</th>
+                            <th>Version</th>
+                            <th>Last Runtime</th>
+                            <th>Status</th>
+                            <th>Assign To</th>
+                            <th>Test Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (KeyValuePair<string, AppWorkFlow> kvp in (Dictionary<string, AppWorkFlow>)ViewData["LastWorkFlowRuns"])
+                        {
+                            <tr>
+                                <td valign="top">
+                                @{
+                                    if (kvp.Value.AssignedTo == null || kvp.Value.AssignedTo.ToLower().Trim().Equals("none") )
+                                    {
+                                        @kvp.Value.AppId
+                                    }
+                                    else
+                                    {
+                                        <a href="javascript:void(0)" onclick="GoTo('@kvp.Value.AppId', '@kvp.Value.AppVersion', '@kvp.Value.WorkflowInstanceId|@kvp.Value.TimeCreated');">@kvp.Value.AppId</a>
+                                    }
+                                }
+                                
+                                </td>
+                                <td valign="top">@kvp.Value.AppVersion</td>
+                                <td valign="top">@kvp.Value.TimeCreated</td>
+                                <td valign="top">
+                                    <ul style='margin: 0;padding-left: 15px;'>
+                                        @foreach (SubmissionStatus status in kvp.Value.Status)
+                                        {
+                                            <li style='font-size: 8pt;color: @(status.Pass?"green":"red")'>@status.Status</li>
+                                        }   
+                                    </ul>
+                                </td>
+                                <td valign="top">
+                                    <div>
+                                        @{
+                                            List<SelectListItem> items = new List<SelectListItem>();
+                                            foreach (KeyValuePair<string, string> eachItem in (Dictionary<string, string>)ViewData["VendorList"])
+                                            {
+                                                items.Add(new SelectListItem()
+                                                {
+                                                    Selected = kvp.Value.AssignedTo == eachItem.Key,
+                                                    Text = eachItem.Value,
+                                                    Value = eachItem.Key
+                                                });
+                                            }
+                                        }
+                                        @Html.DropDownList(kvp.Value.WorkflowInstanceId, items)
+                                        <a href="javascript:void(0)" onclick="AssignTask('@kvp.Value.AppId', '@kvp.Value.AppVersion', '@kvp.Value.WorkflowInstanceId');">Update</a>
+                                    </div>
+                                </td>
+                                <td align="center">
+                                    @if(kvp.Value.AssignedTo == "None")
+                                    {
+                                        <font style="color:gray;font-style:italic;"><b>Not Start</b></font>
+                                    }
+                                    else
+                                    {
+                                        <font style="color:blue;font-style:italic;"><b>In Progress</b></font>
+                                    }
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+				<h3>Tested Runs</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>App</th>
+                            <th>Version</th>
+                            <th>AssignedTo</th>
+							<th>Test Result</th>
+                            <th>Failed Reason</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (KeyValuePair<string, AppWorkFlow> kvp in (Dictionary<string, AppWorkFlow>)ViewData["TestedRuns"])
+                        {
+                            <tr>
+                                <td valign="top"><a href="javascript:void(0)" onclick="GoTo('@kvp.Value.AppId', '@kvp.Value.AppVersion', '@kvp.Value.WorkflowInstanceId|@kvp.Value.TimeCreated');">@kvp.Value.AppId</a></td>
+                                <td valign="top">@kvp.Value.AppVersion</td>
+                                <td valign="top">@kvp.Value.AssignedTo</td>
+								<td valign="top">
+                                    @if (kvp.Value.Failed)
+                                    {
+                                    <font style="color:red">Fail</font>
+                                    }
+                                    else
+                                    {
+                                    <font style="color:green">Pass</font>
+                                    }
+								</td>
+                                <td valign="top">
+								   <b>@kvp.Value.Reason</b>
+								</td>                                                          
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+				<h3>Completed Runs</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>App</th>
+                            <th>Version</th>
+                            <th>Last Runtime</th>
+                            <th>AssignedTo</th>
+							<th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (KeyValuePair<string, AppWorkFlow> kvp in (Dictionary<string, AppWorkFlow>)ViewData["CompletedRuns"])
+                        {
+                            <tr>
+                                <td valign="top"><a href="javascript:void(0)" onclick="GoTo('@kvp.Value.AppId', '@kvp.Value.AppVersion', '@kvp.Value.WorkflowInstanceId|@kvp.Value.TimeCreated');">@kvp.Value.AppId</a></td>
+                                <td valign="top">@kvp.Value.AppVersion</td>
+                                <td valign="top">@kvp.Value.TimeCreated</td>
+								<td valign="top">
+								@if (kvp.Value.AssignedTo == null)
+								{
+								   <span>None</span>
+								}
+								else
+								{
+									<span>@kvp.Value.AssignedTo</span>
+								}
+								</td>
+                                <td valign="top">  								
+								   <b>@kvp.Value.Reason</b>								
+								</td>                                                          
+                            </tr>
+                        }
+                    </tbody>
+                </table>

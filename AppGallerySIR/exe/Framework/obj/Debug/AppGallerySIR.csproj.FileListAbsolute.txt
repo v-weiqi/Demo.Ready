@@ -1,0 +1,21 @@
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-branch\AppGallerySIR\exe\Framework\bin\Debug\AppGallerySIR.dll
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-branch\AppGallerySIR\exe\Framework\bin\Debug\AppGallerySIR.pdb
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-branch\AppGallerySIR\exe\Framework\obj\Debug\AppGallery.SIR.Properties.Resources.resources
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-branch\AppGallerySIR\exe\Framework\obj\Debug\AppGallerySIR.csproj.GenerateResource.Cache
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-branch\AppGallerySIR\exe\Framework\obj\Debug\AppGallerySIR.dll
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-branch\AppGallerySIR\exe\Framework\obj\Debug\AppGallerySIR.pdb
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-branch\AppGallerySIR\exe\Framework\obj\Debug\AppGallerySIR.csprojResolveAssemblyReference.cache
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-DEV\AppGallerySIR\exe\Framework\bin\Debug\AppGallerySIR.dll
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-DEV\AppGallerySIR\exe\Framework\bin\Debug\AppGallerySIR.pdb
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-DEV\AppGallerySIR\exe\Framework\obj\Debug\AppGallerySIR.csprojResolveAssemblyReference.cache
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-DEV\AppGallerySIR\exe\Framework\obj\Debug\AppGallery.SIR.Properties.Resources.resources
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-DEV\AppGallerySIR\exe\Framework\obj\Debug\AppGallerySIR.csproj.GenerateResource.Cache
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-DEV\AppGallerySIR\exe\Framework\obj\Debug\AppGallerySIR.dll
+C:\v-gaw\Shared Code\Gang\AppGallery\FMS\FeedManagementSystem-DEV\AppGallerySIR\exe\Framework\obj\Debug\AppGallerySIR.pdb
+C:\FMS\AppGallerySIR\exe\Framework\bin\Debug\AppGallerySIR.dll
+C:\FMS\AppGallerySIR\exe\Framework\bin\Debug\AppGallerySIR.pdb
+C:\FMS\AppGallerySIR\exe\Framework\obj\Debug\AppGallerySIR.csprojResolveAssemblyReference.cache
+C:\FMS\AppGallerySIR\exe\Framework\obj\Debug\AppGallery.SIR.Properties.Resources.resources
+C:\FMS\AppGallerySIR\exe\Framework\obj\Debug\AppGallerySIR.csproj.GenerateResource.Cache
+C:\FMS\AppGallerySIR\exe\Framework\obj\Debug\AppGallerySIR.dll
+C:\FMS\AppGallerySIR\exe\Framework\obj\Debug\AppGallerySIR.pdb
